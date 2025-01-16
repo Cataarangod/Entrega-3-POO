@@ -2,6 +2,7 @@ package Capitulo4;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.text.MessageFormat;
 
 public class Empleado {
     private String codigoEmpleado, nombreEmpleado;
@@ -10,8 +11,10 @@ public class Empleado {
     private JTextPane txtCodigo, txtNombre, txtValorHora, txtHorasTrabajadas, txtPorcReteFuente;
     private JLabel lblCodigo, lblNombre, lblValorHora, lblHorasTrabajadas, lblPorcReteFuente;
     private JButton btnGuardar;
+    private JLabel lblInformacionEmpleado;
+    private JLabel lblResultadoSalario;
 
-   public Empleado(String codigoEmpleado, String nombreEmpleado,
+    public Empleado(String codigoEmpleado, String nombreEmpleado,
              double horasTrabajadas, double valorHora, double porcentajeReteFuente){
         this.codigoEmpleado = codigoEmpleado;
         this.nombreEmpleado = nombreEmpleado;
@@ -33,7 +36,6 @@ public class Empleado {
         //add the frame
         JFrame f = new JFrame("Empleado");
         f.setContentPane(new Empleado().empleadoForm);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.pack();
         //set the location (x,y)
         f.setLocation(250, 60);
@@ -43,9 +45,23 @@ public class Empleado {
 
 
     public void settingEmployeeInfo () {
-        System.out.println("Ingresa los datos");
         this.codigoEmpleado = txtCodigo.getText();
         this.nombreEmpleado = txtNombre.getText();
-        System.out.println(codigoEmpleado);
+        this.horasTrabajadas = Double.parseDouble(txtHorasTrabajadas.getText());
+        this.valorHora = Double.parseDouble(txtValorHora.getText());
+        this.porcentajeReteFuente = Double.parseDouble(txtPorcReteFuente.getText())/100;
+        calcularSalarioBruto();
+        lblInformacionEmpleado.setText(MessageFormat.format("Código de empleado: {0} \n Nombre: {1} \n",
+                this.codigoEmpleado, this.nombreEmpleado));
+        lblResultadoSalario.setText(MessageFormat.format("Salario bruto: {0} \n Salario neto: {1} ",this.salarioBruto, this.salarioNeto));
+    }
+
+    private void calcularSalarioBruto(){
+        salarioBruto = horasTrabajadas * valorHora;
+        calcularSalarioNeto();
+    }
+    private void calcularSalarioNeto() {
+        System.out.println(salarioBruto);
+        salarioNeto = salarioBruto - (salarioBruto * porcentajeReteFuente);
     }
 }

@@ -16,7 +16,7 @@ public class ComparadorAB {
         btnCalcular.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                comparar(A, B);
+                settingInfo();
             }
         });
         btnLimpiar.addActionListener(new ActionListener() {
@@ -40,6 +40,7 @@ public class ComparadorAB {
     public void settingInfo(){
         A = Double.parseDouble(txtNumeroA.getText());
         B = Double.parseDouble(txtNumeroB.getText());
+        comparar(A, B);
     }
 
     public void comparar ( double A, double B){

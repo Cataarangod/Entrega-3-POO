@@ -9,7 +9,7 @@ public class Rombo {
     int diametroMayor;
     int diametroMenor;
     private JPanel romboForm;
-    private JTextPane txtArea, txtLado, txtPerimetro, txtDiametroMayor, txtDiametroMenor;
+    private JTextPane txtArea, txtPerimetro, txtDiametroMayor, txtDiametroMenor;
     private JButton btnCalcular, btnLimpiar;
 
     public Rombo(int lado, int diametroMayor, int diametroMenor) {
@@ -28,7 +28,6 @@ public class Rombo {
             @Override
             public void actionPerformed(ActionEvent e) {
                 txtArea.setText("");
-                txtLado.setText("");
                 txtPerimetro.setText("");
                 txtDiametroMayor.setText("");
                 txtDiametroMenor.setText("");
@@ -46,7 +45,6 @@ public class Rombo {
     }
 
     private void settingInfo(){
-        this.lado = Integer.parseInt(txtLado.getText());
         this.diametroMayor = Integer.parseInt(txtDiametroMayor.getText());
         this.diametroMenor = Integer.parseInt(txtDiametroMenor.getText());
     }
@@ -56,7 +54,7 @@ public class Rombo {
     }
 
     private void calcularPerimetro() {
-        txtPerimetro.setText(String.valueOf(4*lado));
+        txtPerimetro.setText(String.valueOf(2*Math.sqrt(Math.pow(diametroMayor, 2) + Math.pow(diametroMenor, 2))));
     }
 
     double getArea(){
@@ -64,6 +62,6 @@ public class Rombo {
     }
 
     double getPerimetro(){
-        return Double.parseDouble(String.valueOf(4*lado));
+        return Double.parseDouble(String.valueOf(2*Math.sqrt(Math.pow(diametroMayor, 2) + Math.pow(diametroMenor, 2))));
     }
 }

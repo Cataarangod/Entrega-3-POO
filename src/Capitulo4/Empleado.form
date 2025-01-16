@@ -1,148 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Capitulo4.Empleado">
-<grid id="27dc6" binding="empleadoForm" layout-manager="FlowLayout" hgap="20" vgap="20" flow-align="1">
-<constraints>
-<xy x="20" y="20" width="750" height="600"/>
-</constraints>
-<properties>
-<background color="-16310485"/>
-<foreground color="-15787585"/>
-<minimumSize width="650" height="500"/>
-<name value="empleadoForm"/>
-<preferredSize width="750" height="600"/>
-</properties>
-<border type="empty" title="Empleado" title-justification="2" title-position="1">
-<font name="Segoe UI"/>
-<title-color color="-5524801"/>
-</border>
-<children>
-<component id="53c9b" class="javax.swing.JLabel" binding="lblCodigo">
-<constraints/>
-<properties>
-<horizontalTextPosition value="11"/>
-<labelFor value="55266"/>
-<maximumSize width="500" height="40"/>
-<minimumSize width="200" height="30"/>
-<opaque value="false"/>
-<preferredSize width="250" height="30"/>
-<text value="Código"/>
-<toolTipText value="Código del empleado"/>
-<verticalTextPosition value="0"/>
-</properties>
-</component>
-<component id="55266" class="javax.swing.JTextPane" binding="txtCodigo">
-<constraints/>
-<properties>
-<background color="-1"/>
-<dragEnabled value="true"/>
-<minimumSize width="100" height="30"/>
-<preferredSize width="200" height="30"/>
-<text value=""/>
-</properties>
-</component>
-<component id="6a615" class="javax.swing.JLabel" binding="lblNombre">
-<constraints/>
-<properties>
-<horizontalTextPosition value="11"/>
-<inheritsPopupMenu value="true"/>
-<labelFor value="55266"/>
-<minimumSize width="200" height="30"/>
-<opaque value="false"/>
-<preferredSize width="250" height="30"/>
-<text value="Nombre"/>
-<toolTipText value="Nombre del empleado"/>
-<verticalTextPosition value="0"/>
-</properties>
-</component>
-<component id="c8d8d" class="javax.swing.JTextPane" binding="txtNombre">
-<constraints/>
-<properties>
-<background color="-1"/>
-<dragEnabled value="true"/>
-<minimumSize width="100" height="30"/>
-<preferredSize width="200" height="30"/>
-<text value=""/>
-</properties>
-</component>
-<component id="9bfcb" class="javax.swing.JLabel" binding="lblValorHora">
-<constraints/>
-<properties>
-<horizontalTextPosition value="11"/>
-<labelFor value="55266"/>
-<minimumSize width="200" height="30"/>
-<opaque value="false"/>
-<preferredSize width="250" height="30"/>
-<text value="Valor hora trabajo"/>
-<toolTipText value="Código del empleado"/>
-<verticalTextPosition value="0"/>
-</properties>
-</component>
-<component id="21898" class="javax.swing.JTextPane" binding="txtValorHora">
-<constraints/>
-<properties>
-<background color="-1"/>
-<dragEnabled value="true"/>
-<minimumSize width="100" height="30"/>
-<preferredSize width="200" height="30"/>
-<text value=""/>
-</properties>
-</component>
-<component id="ae92c" class="javax.swing.JLabel" binding="lblPorcReteFuente">
-<constraints/>
-<properties>
-<horizontalTextPosition value="11"/>
-<labelFor value="55266"/>
-<maximumSize width="500" height="40"/>
-<minimumSize width="200" height="30"/>
-<opaque value="false"/>
-<preferredSize width="250" height="30"/>
-<text value="Porcentaje retención en la fuente"/>
-<toolTipText value="Código del empleado"/>
-<verticalTextPosition value="0"/>
-</properties>
-</component>
-<component id="5ff2" class="javax.swing.JTextPane" binding="txtPorcReteFuente">
-<constraints/>
-<properties>
-<background color="-1"/>
-<dragEnabled value="true"/>
-<minimumSize width="100" height="30"/>
-<preferredSize width="200" height="30"/>
-<text value=""/>
-</properties>
-</component>
-<component id="25af3" class="javax.swing.JLabel" binding="lblHorasTrabajadas">
-<constraints/>
-<properties>
-<horizontalTextPosition value="11"/>
-<labelFor value="55266"/>
-<minimumSize width="200" height="30"/>
-<opaque value="false"/>
-<preferredSize width="250" height="30"/>
-<text value="Horas trabajadas"/>
-<toolTipText value="Código del empleado"/>
-<verticalTextPosition value="0"/>
-</properties>
-</component>
-<component id="9323e" class="javax.swing.JTextPane" binding="txtHorasTrabajadas">
-<constraints/>
-<properties>
-<background color="-1"/>
-<dragEnabled value="true"/>
-<minimumSize width="100" height="30"/>
-<preferredSize width="200" height="30"/>
-<text value=""/>
-</properties>
-</component>
-<component id="6db0e" class="javax.swing.JButton" binding="btnGuardar">
-<constraints/>
-<properties>
-<label value="Guardar"/>
-<minimumSize width="150" height="40"/>
-<preferredSize width="250" height="40"/>
-<text value="Guardar"/>
-</properties>
-</component>
-</children>
-</grid>
+  <grid id="27dc6" binding="empleadoForm" layout-manager="FlowLayout" hgap="20" vgap="20" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="750" height="500"/>
+    </constraints>
+    <properties>
+      <background color="-16310485"/>
+      <foreground color="-15787585"/>
+      <minimumSize width="700" height="500"/>
+      <name value="empleadoForm"/>
+      <preferredSize width="750" height="600"/>
+    </properties>
+    <border type="empty" title="Empleado" title-justification="2" title-position="1">
+      <font name="Segoe UI"/>
+      <title-color color="-5524801"/>
+    </border>
+    <children>
+      <component id="53c9b" class="javax.swing.JLabel" binding="lblCodigo">
+        <constraints/>
+        <properties>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
+          <labelFor value="55266"/>
+          <maximumSize width="500" height="40"/>
+          <minimumSize width="200" height="40"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="30"/>
+          <text value="Código"/>
+          <toolTipText value="Código del empleado"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="55266" class="javax.swing.JTextPane" binding="txtCodigo">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <dragEnabled value="true"/>
+          <minimumSize width="150" height="40"/>
+          <name value="txtCodigo"/>
+          <nextFocusableComponent value="c8d8d"/>
+          <preferredSize width="250" height="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="6a615" class="javax.swing.JLabel" binding="lblNombre">
+        <constraints/>
+        <properties>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
+          <inheritsPopupMenu value="true"/>
+          <labelFor value="55266"/>
+          <minimumSize width="200" height="40"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="30"/>
+          <text value="Nombre"/>
+          <toolTipText value="Nombre del empleado"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="c8d8d" class="javax.swing.JTextPane" binding="txtNombre">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <dragEnabled value="true"/>
+          <minimumSize width="150" height="40"/>
+          <name value="txtNombre"/>
+          <nextFocusableComponent value="21898"/>
+          <preferredSize width="250" height="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9bfcb" class="javax.swing.JLabel" binding="lblValorHora">
+        <constraints/>
+        <properties>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
+          <labelFor value="55266"/>
+          <minimumSize width="200" height="40"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="30"/>
+          <text value="Valor hora trabajo"/>
+          <toolTipText value="Código del empleado"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="21898" class="javax.swing.JTextPane" binding="txtValorHora">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <dragEnabled value="true"/>
+          <minimumSize width="150" height="40"/>
+          <name value="txtValorHora"/>
+          <nextFocusableComponent value="5ff2"/>
+          <preferredSize width="250" height="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="ae92c" class="javax.swing.JLabel" binding="lblPorcReteFuente">
+        <constraints/>
+        <properties>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
+          <labelFor value="55266"/>
+          <maximumSize width="500" height="40"/>
+          <minimumSize width="200" height="40"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="30"/>
+          <text value="Porcentaje retención en la fuente"/>
+          <toolTipText value="Código del empleado"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="5ff2" class="javax.swing.JTextPane" binding="txtPorcReteFuente">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <dragEnabled value="true"/>
+          <minimumSize width="150" height="40"/>
+          <name value="txtPorcReteFuente"/>
+          <nextFocusableComponent value="9323e"/>
+          <preferredSize width="250" height="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="25af3" class="javax.swing.JLabel" binding="lblHorasTrabajadas">
+        <constraints/>
+        <properties>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
+          <labelFor value="55266"/>
+          <minimumSize width="200" height="40"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="30"/>
+          <text value="Horas trabajadas"/>
+          <toolTipText value="Código del empleado"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="9323e" class="javax.swing.JTextPane" binding="txtHorasTrabajadas">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <dragEnabled value="true"/>
+          <minimumSize width="150" height="40"/>
+          <name value="txtHorasTrabajadas"/>
+          <nextFocusableComponent value="6db0e"/>
+          <preferredSize width="250" height="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="6db0e" class="javax.swing.JButton" binding="btnGuardar">
+        <constraints/>
+        <properties>
+          <alignmentY value="0.8"/>
+          <background color="-16711411"/>
+          <font name="Segoe UI" size="20" style="0"/>
+          <foreground color="-1"/>
+          <label value="Guardar"/>
+          <minimumSize width="150" height="40"/>
+          <preferredSize width="260" height="45"/>
+          <text value="Guardar"/>
+        </properties>
+      </component>
+      <component id="b128f" class="javax.swing.JLabel" binding="lblInformacionEmpleado">
+        <constraints/>
+        <properties>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusable value="false"/>
+          <font name="Segoe UI" size="20" style="1"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="10"/>
+          <minimumSize width="400" height="40"/>
+          <preferredSize width="600" height="40"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="2a478" class="javax.swing.JLabel" binding="lblResultadoSalario">
+        <constraints/>
+        <properties>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusable value="false"/>
+          <font name="Segoe UI" size="20" style="1"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="10"/>
+          <minimumSize width="400" height="40"/>
+          <preferredSize width="600" height="40"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
 </form>

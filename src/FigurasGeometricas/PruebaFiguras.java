@@ -10,7 +10,7 @@ public class PruebaFiguras {
         Circulo miCirculo = new Circulo(2);
         Rectangulo miRectangulo = new Rectangulo(1, 2);
         Cuadrado miCuadrado = new Cuadrado(3);
-        TrianguloEquilatero miTrianguloEquilatero = new TrianguloEquilatero(3);
+        TrianguloRectangulo miTrianguloRectangulo = new TrianguloRectangulo(3, 5);
         Rombo miRombo = new Rombo(5,8,4);
         Trapecio miTrapecio = new Trapecio(15,12,6);
 
@@ -23,8 +23,8 @@ public class PruebaFiguras {
         System.out.println("El área del cuadrado es = " + miCuadrado.getArea());
         System.out.println("El perímetro del cuadrado es = " + miCuadrado.getPerimetro());
         System.out.println();
-        System.out.println("El área del triángulo es = " + miTrianguloEquilatero.getArea());
-        System.out.println("El perímetro del triángulo es = " + miTrianguloEquilatero.getPerimetro());
+       /* System.out.println("El área del triángulo es = " + miTrianguloRectangulo.getArea());
+        System.out.println("El perímetro del triángulo es = " + miTrianguloRectangulo.getPerimetro());*/
         System.out.println();
         System.out.println("El área del rombo es = " + miRombo.getArea());
         System.out.println("El perímetro del rombo es = " + miRombo.getPerimetro());

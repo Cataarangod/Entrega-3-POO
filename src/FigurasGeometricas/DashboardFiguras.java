@@ -33,7 +33,7 @@ public class DashboardFiguras {
         btnTrianguloRectangulo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                TrianguloEquilatero trianguloRectangulo = new TrianguloEquilatero(3);
+                TrianguloRectangulo trianguloRectangulo = new TrianguloRectangulo(3,5);
                 trianguloRectangulo.loadForm();
             }
         });
